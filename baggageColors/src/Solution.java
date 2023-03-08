@@ -53,7 +53,7 @@ public class Solution {
 					//summing the amount of them up
 					.reduce(0, (subtotal, element) -> subtotal + element);
 
-			System.out.println(amount);
+			System.out.println(amount); //this returns 4, as per specification
 
 		} catch (IOException e) {
 			e.printStackTrace();
