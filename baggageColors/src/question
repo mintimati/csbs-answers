@@ -1,0 +1,20 @@
+Write a method named baggageColors that counts the number of
+bags that can store a "shiny gold" bag in a set of luggage data provided in a file.
+Your method accepts a string representing a file name as a parameter where each line
+ of the file data names a unique type of bag, such as a "light red bag",
+ along with what other kinds of bags that bag contains.
+ Your task is to find the number of lines of the file that end up containing one or more shiny gold bags.
+  For example, suppose the file named baggage.txt contains the following:
+
+light red bags contain 1 bright white bag, 2 muted yellow bags.
+dark orange bags contain 3 bright white bags, 4 muted yellow bags.
+bright white bags contain 1 shiny gold bag.
+shiny gold bags contain 1 dark olive bag, 2 vibrant plum bags.
+dark olive bags contain 3 faded blue bags, 4 dotted black bags.
+muted yellow bags contain 2 shiny gold bags, 9 faded blue bags.
+vibrant plum bags contain 5 faded blue bags, 6 dotted black bags.
+faded blue bags contain no other bags.
+dotted black bags contain no other bags.
+
+
+This should return 4.
