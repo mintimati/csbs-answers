@@ -7,11 +7,11 @@ import java.util.regex.Pattern;
 public class Solution {
 
 	public static void main(String[] args) {
-		Solution.baggageColors("baggageColors/src/inputfile");
+		System.out.println(Solution.baggageColors("baggageColors/src/inputfile"));
 	}
 
 
-	public static void baggageColors(String path) {
+	public static int baggageColors(String path) {
 		//accessing the "inputfile" via stream
 		try {
 			var amount = Files
@@ -53,10 +53,12 @@ public class Solution {
 					//summing the amount of them up
 					.reduce(0, (subtotal, element) -> subtotal + element);
 
-			System.out.println(amount); //this returns 4, as per specification
+			return amount;
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		return 404;
 	}
 }
